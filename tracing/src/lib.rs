@@ -898,7 +898,8 @@ pub mod __macro_support {
     use tracing_core::Once;
     pub mod as_value {
         pub use crate::field::convert::{
-            AsDebugAnyValue as _, AsDebugValue as _, AsDisplayAnyValue as _, AsDisplayValue as _,
+            AsDebugAnyValue as _, AsDebugUnsizedValue as _, AsDebugValue as _,
+            AsDisplayAnyValue as _, AsDisplayUnsizedValue as _, AsDisplayValue as _,
         };
 
         pub use crate::stdlib::borrow::Borrow as _;
